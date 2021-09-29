@@ -13,7 +13,7 @@ const Profile = () => {
         },
         {
             lang: "css",
-            percent: 85,
+            percent: 70,
         },
         {
             lang: "javascript & query",
@@ -25,11 +25,11 @@ const Profile = () => {
         },
         {
             lang: "React JavaScript FrameWork & Next Js (frontend)",
-            percent: 80,
+            percent: 70,
         },
         {
             lang: "Node Js (backend)",
-            percent: 80,
+            percent: 70,
         },
         {
             lang: "python & AI",
@@ -41,15 +41,15 @@ const Profile = () => {
         },
         {
             lang: "Data Analysis Context Diagram, Data Flow, FlowChart",
-            percent: 50,
+            percent: 40,
         },
         {
             lang: "C C++ C# VB",
-            percent: 70,
+            percent: 60,
         },
         {
             lang: "Docker & Linux",
-            percent: 50,
+            percent: 40,
         }
     ]
 
