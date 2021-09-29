@@ -7,7 +7,7 @@ const Footer = () => {
         <>
             <Animated animationIn="fadeIn" animationInDuration={2500} isVisible={true}>
                 <div className="footer">
-                    Develop by NUBDev @copyright 2021 <Link to="/contact">ติดต่อ</Link>
+                    Develop by NUBDev with React JS @copyright 2021 <Link to="/contact">ติดต่อ</Link>
                 </div>
             </Animated>
         </>
