@@ -45,11 +45,11 @@ const Profile = () => {
         },
         {
             lang: "C C++ C# VB",
-            percent: 60,
+            percent: 50,
         },
         {
             lang: "Docker & Linux",
-            percent: 40,
+            percent: 65,
         }
     ]
 
