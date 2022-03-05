@@ -49,7 +49,7 @@ const Profile = () => {
         },
         {
             lang: "Docker & Linux",
-            percent: 65,
+            percent: 80,
         }
     ]
 
