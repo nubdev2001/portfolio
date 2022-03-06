@@ -17,7 +17,6 @@ const Profile = () => {
         },
         {
             lang: "javascript & query",
-            percent: 80,
             percent: 70,
         },
         {
