@@ -13,11 +13,19 @@ const Profile = () => {
         },
         {
             lang: "css",
+<<<<<<< HEAD
             percent: 80,
         },
         {
             lang: "javascript & query",
             percent: 80,
+=======
+            percent: 70,
+        },
+        {
+            lang: "javascript & query",
+            percent: 70,
+>>>>>>> 74e520ce5f9b9586e969f882ea258d7cef02801a
         },
         {
             lang: "PHP & PHP OOP",
@@ -48,8 +56,13 @@ const Profile = () => {
             percent: 50,
         },
         {
+<<<<<<< HEAD
             lang: "(Devops) Jenkins, Kubernetes(k8s), Docker, Linux, nginx",
             percent: 80,
+=======
+            lang: "Docker & Linux",
+            percent: 65,
+>>>>>>> 74e520ce5f9b9586e969f882ea258d7cef02801a
         }
     ]
 
