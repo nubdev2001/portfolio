@@ -55,8 +55,6 @@ const Profile = () => {
         {
             lang: "(Devops) Jenkins, Kubernetes(k8s), Docker, Linux, nginx",
             percent: 80,
-            lang: "Docker & Linux",
-            percent: 65,
         }
     ]
 
