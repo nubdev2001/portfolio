@@ -208,44 +208,44 @@ body::-webkit-scrollbar-thumb {
 
 @keyframes leftToRight1_500 {
   from {
-    left: 0%;
+    left: 8%;
     opacity: 0.3;
   }
   to {
-    left: 5%;
+    left: 13%;
     opacity: 0.8;
   }
 }
 
 @keyframes leftToRight2_500 {
   from {
-    left: 5%;
+    left: 13%;
     opacity: 0;
   }
   to {
-    left: 20%;
+    left: 28%;
     opacity: 0.8;
   }
 }
 
 @keyframes leftToRight3_500 {
   from {
-    left: 25%;
+    left: 33%;
     opacity: 0;
   }
   to {
-    left: 45%;
+    left: 53%;
     opacity: 0.8;
   }
 }
 
 @keyframes leftToRight4_500 {
   from {
-    left: 45%;
+    left: 53%;
     opacity: 0;
   }
   to {
-    left: 65%;
+    left: 73%;
     opacity: 0.8;
   }
 }
