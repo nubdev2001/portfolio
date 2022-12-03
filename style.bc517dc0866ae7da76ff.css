@@ -6,11 +6,36 @@
 }
 
 body{
-    font-family: 'Gemunu Libre','Kanit', sans-serif;
+    font-family: 'Kanit', sans-serif;
     background-image: url(./12e50ba10e41603a3c9d.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+body{
+  -webkit-touch-callout: none!important; /* iOS Safari */
+  -webkit-user-select: none!important; /* Safari */
+   -khtml-user-select: none!important; /* Konqueror HTML */
+     -moz-user-select: none!important; /* Old versions of Firefox */
+      -ms-user-select: none!important; /* Internet Explorer/Edge */
+          user-select: none!important; /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
+}
+
+.line{
+  height: 5px;
+  width: 15%;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30.5%;
+  z-index: -99!important;
+}
+
+.navbar .navbar-nav .nav-link{
+  margin: 0px 35px;
 }
 
 .bg-navnar-theme{
@@ -29,11 +54,13 @@ body{
 .navbar-light .navbar-nav .nav-link{
   color: rgba(217, 217, 217, 0.87)!important;
   transition: 0.3s;
+  border-bottom: 2px solid transparent;
 }
 
 .navbar-light .navbar-nav .nav-link:hover{
   color: rgb(253, 253, 253);
-  animation: Zoom 0.3s forwards;
+  animation: Zoom 0.3s ease-in-out forwards;
+  border-bottom: 2px solid rgb(253, 253, 253);
 }
 
 .navbar-light .navbar-nav .nav-link:focus{
@@ -45,10 +72,15 @@ body{
       transform: rotate(0deg);
   }
   100%{
-      transform: rotate(5deg);
+      transform: translateY(-3px);
   }
 }
 
+.profile{
+  border-left: 5.5px solid rgba(82, 110, 167, 0.5);
+  border-bottom: 5.5px solid rgba(82, 110, 167, 0.5);
+  z-index: 9!important;
+}
 
 .wrapper {
     height: 50vh;
@@ -56,9 +88,21 @@ body{
     align-items: center;
     justify-content: center;
   }
+
+  .contact .icon{
+    background-color: rgb(82, 110, 167);
+    padding: 8px;
+    border-radius: 50%;
+    border: 2px solid white;
+    transition: 0.3s;
+  }
+
+  .contact .icon:hover{
+    transform: scale(1.1) translateY(-10px);
+  }
   
   .typing {
-    color: rgb(255, 255, 255);
+    color: rgb(211 212 212);
     width: 29.5ch;
     animation: typing 4s steps(22), blink .5s step-end infinite alternate;
     white-space: nowrap;
@@ -204,6 +248,10 @@ body::-webkit-scrollbar-thumb {
     animation-delay: 3s!important;
     width: 55px!important;
   }
+
+  .typing {
+    font-size: 1.5em!important;
+  }
 }
 
 @keyframes leftToRight1_500 {
@@ -266,3 +314,54 @@ body::-webkit-scrollbar-thumb {
 		transform: translatey(0px);
 	}
 }
+
+/* GALLERY */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); /* additional cards can be easily added to the grid while maintaining responsiveness */
+  grid-gap: 10px;
+  max-width: 900px;
+  margin-top: 50px; /* a little room to breath on smaller screens */
+  margin-bottom: 100px;
+  padding: 10px; /* allows .card box-shadow to be seen, otherwise hidden by overflow:hidden */
+  overflow: hidden; /* needed for responsiveness of grid and to prevent horizontal overflow scroll on small screens */
+}
+.card {
+  position: relative; /* needed to position child elements as absolute */
+  display: grid;
+  height: 180px;
+  overflow: hidden; /* comment this out, hover over cards, and see what happens! */
+  border-radius: 2px;
+  box-shadow: 2px 4px 8px rgba(59,38,0,.6); /* transparent dark brown color */
+}
+.card-img {
+  position: absolute;
+  width: 100%; /* change these values to 80% and watch what happens! */
+  height: 100%;
+  object-fit: cover; /* without this the image would stretch to fit the width & height */
+}
+.card-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: orange;
+  opacity: 0; /* the text is always there, just invisible... spooky! */
+  z-index: 1; /* change to 0 and watch what happens! */
+}
+.card:hover::after {
+  content: '';
+  position: absolute;
+  top: 0; /* all values are needed for the content to span the space of the container */
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.7);
+}
+.card:hover .card-img {
+  scale: 1.5; /* that zoom effect! */
+}
+.card:hover .card-text {
+  opacity: 1; /* now, there's the text! */
+}
+
