@@ -84,7 +84,7 @@ body{
   .footer {
     position: fixed;
     left: 0;
-    bottom: 0;
+    bottom: 0px;
     width: 100%;
     background-color: rgb(56 64 80 / 62%);
     padding: 10px;
@@ -267,4 +267,4 @@ body::-webkit-scrollbar-thumb {
 	}
 }
 
-/*# sourceMappingURL=style.8b0c58d6e221224cfe1a.css.map*/
+/*# sourceMappingURL=style.e36d0a52b15587d0372a.css.map*/
